@@ -57,3 +57,11 @@ for x in MyList:
         
 print(min)
 print(max)
+
+# Function
+
+def addTwoNum(a, b):
+    c = a + b
+    print(c)
+    
+addTwoNum(2, 3)
