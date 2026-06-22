@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 data = [
@@ -16,69 +15,82 @@ data = [
 
 df = pd.DataFrame(data)
 
+print("\n" + "="*50);
 print("--- Total Data Frame ---")
+print("="*50 + "\n");
 
 print(df)   
-print("\n" + "="*50 + "\n");
 
+print("\n" + "="*50);
 print("--- First Three Rows ---")
+print("="*50 + "\n");
 
 print(df.head(3))   
-print("\n" + "="*50 + "\n");
 
+print("\n" + "="*50);
 print("--- Last Two Rows ---")
+print("="*50 + "\n");
 
 print(df.tail(2))   
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Info of Table ---")
+print("="*50 + "\n");
 
 print(df.info())   
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Summary of Table ---")
+print("="*50 + "\n");
 
 print(df.describe())   
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Targeting Name Column from Table as Series ---")
+print("="*50 + "\n");
 
 print(df['Name'])   
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Targeting Name Column from Table as DataFrame ---")
+print("="*50 + "\n");
 
 print(df[['Name']])   
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Targeting Name & Salary Column from Table as DataFrame ---")
+print("="*50 + "\n");
 
 print(df[['Name', 'Salary']])   
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Label Based Indexing ---")
+print("="*50 + "\n");
 
 df_name_index = df.set_index('Name')
 print(df_name_index.loc['Leo']) 
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Label Based Indexing ---")
+print("="*50 + "\n");
 
 df_name_index = df.set_index('Name')
 print(df_name_index.loc['Leo']) 
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Label Based Filtering as DataFrame ---")
+print("="*50 + "\n");
 
 print(df[df['Name'] == "Leo"]) 
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Index Based Data Filtering ---")
+print("="*50 + "\n");
 
 print(df.iloc[2])  # iloc is for indexing column when we don't not about the column or row name
-print("\n" + "="*50 + "\n")
 
+print("\n" + "="*50);
 print("--- Salary > 75000 Filtering ---")
+print("="*50 + "\n");
 
 print(df[df['Salary'] > 75000])
-print("\n" + "="*50 + "\n")
