@@ -49,3 +49,9 @@ print("="*50 + "\n");
 print(pd.to_datetime(df['Hire_Date']))
 # df['Hire_Date'] = pd.to_datetime(df['Hire_Date'])
 # print(df.info())
+
+print("\n" + "="*50);
+print("--- Extracting Year from Hire_Date Datetime Column ---")
+print("="*50 + "\n");
+
+print(pd.to_datetime(df['Hire_Date']).dt.year)
