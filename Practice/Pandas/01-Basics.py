@@ -40,3 +40,14 @@ print("--- Summary of Table ---")
 
 print(df.describe())   
 print("\n" + "="*50 + "\n")
+
+print("--- Targeting Name Column from Table as Series ---")
+
+print(df['Name'])   
+print("\n" + "="*50 + "\n")
+
+
+print("--- Targeting Name Column from Table as DataFrame ---")
+
+print(df[['Name']])   
+print("\n" + "="*50 + "\n")
