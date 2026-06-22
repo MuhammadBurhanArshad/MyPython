@@ -55,3 +55,20 @@ print("--- Targeting Name & Salary Column from Table as DataFrame ---")
 
 print(df[['Name', 'Salary']])   
 print("\n" + "="*50 + "\n")
+
+print("--- Label Based Indexing ---")
+
+df_name_index = df.set_index('Name')
+print(df_name_index.loc['Leo']) 
+print("\n" + "="*50 + "\n")
+
+print("--- Label Based Indexing ---")
+
+df_name_index = df.set_index('Name')
+print(df_name_index.loc['Leo']) 
+print("\n" + "="*50 + "\n")
+
+print("--- Label Based Filtering as DataFrame ---")
+
+print(df[df['Name'] == "Leo"]) 
+print("\n" + "="*50 + "\n")
