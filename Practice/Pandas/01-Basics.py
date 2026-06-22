@@ -46,8 +46,12 @@ print("--- Targeting Name Column from Table as Series ---")
 print(df['Name'])   
 print("\n" + "="*50 + "\n")
 
-
 print("--- Targeting Name Column from Table as DataFrame ---")
 
 print(df[['Name']])   
+print("\n" + "="*50 + "\n")
+
+print("--- Targeting Name & Salary Column from Table as DataFrame ---")
+
+print(df[['Name', 'Salary']])   
 print("\n" + "="*50 + "\n")
