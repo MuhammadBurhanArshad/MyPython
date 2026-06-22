@@ -38,3 +38,10 @@ print("--- Inner Merge for department and employee data ---")
 print("="*50 + "\n");
 
 print(pd.merge(df, dept_info, on='Department', how='inner'))
+
+print("\n" + "="*50);
+print("--- Inner Merge for department and employee data ---")
+print("="*50 + "\n");
+
+new_hire = pd.DataFrame({'Name': ['Ivy'], 'Department': ['IT'], 'Salary': [88000]})
+print(pd.concat([df, new_hire], ignore_index=True))
