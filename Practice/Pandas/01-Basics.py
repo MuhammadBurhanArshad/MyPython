@@ -72,3 +72,9 @@ print("--- Label Based Filtering as DataFrame ---")
 
 print(df[df['Name'] == "Leo"]) 
 print("\n" + "="*50 + "\n")
+
+
+print("--- Index Based Data Filtering ---")
+
+print(df.iloc[2]) 
+print("\n" + "="*50 + "\n")
