@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 data = [
     {'Name': 'Leo', 'Department': 'IT', 'Salary': 105000, 'Years_Experience': 15, 'Bonus': 12000, 'Hire_Date': '2015-06-01'},
@@ -22,35 +23,15 @@ print("="*50 + "\n");
 print(df)
 
 print("\n" + "="*50);
-print("--- Where Bonus is Null ---")
+print("--- New Total_Compensation (Salary + Bonus) as Data Frame ---")
 print("="*50 + "\n");
 
-print(df['Bonus'].isnull().sum())
+df['Total_Compensation'] = df['Salary'] + df['Bonus']
+print(df)
 
 print("\n" + "="*50);
-print("--- Filling Null Bonus Values ---")
+print("--- New Seniority Column as Data Frame ---")
 print("="*50 + "\n");
 
-print(df.fillna(0)) # fillna() is pandas' primary method for replacing missing values (NaN, None, or NaT) with a specified value or strategy.
-
-print("\n" + "="*50);
-print("--- Fill the missing 'Bonus' values with the average of the existing Bonus column ---")
-print("="*50 + "\n");
-
-print(df['Bonus'].fillna(df['Bonus'].mean()))
-# df['Bonus'] = df['Bonus'].fillna(df['Bonus'].mean())
-# print(df)
-
-print("\n" + "="*50);
-print("--- Changing data type to Datetime from string ---")
-print("="*50 + "\n");
-
-print(pd.to_datetime(df['Hire_Date']))
-# df['Hire_Date'] = pd.to_datetime(df['Hire_Date'])
-# print(df.info())
-
-print("\n" + "="*50);
-print("--- Extracting Year from Hire_Date Datetime Column ---")
-print("="*50 + "\n");
-
-print(pd.to_datetime(df['Hire_Date']).dt.year)
+df['Seniority'] = np.where(df['Years_Experience'] > 10, 'Senior', 'Junior')
+print(df)
