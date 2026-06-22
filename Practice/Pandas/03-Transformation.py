@@ -35,3 +35,22 @@ print("="*50 + "\n");
 
 df['Seniority'] = np.where(df['Years_Experience'] > 10, 'Senior', 'Junior')
 print(df)
+
+print("\n" + "="*50);
+print("--- Sorting as Salary as Highest First in Data Frame ---")
+print("="*50 + "\n");
+
+df = df.sort_values(by='Salary', ascending=False)
+print(df)
+
+print("\n" + "="*50);
+print("--- Average salary for each Department ---")
+print("="*50 + "\n");
+
+print(df.groupby('Department')['Salary'].mean())
+
+print("\n" + "="*50);
+print("--- Sum of Bonus for each Department ---")
+print("="*50 + "\n");
+
+print(df.groupby('Department')['Bonus'].sum())
