@@ -54,3 +54,9 @@ print("--- Sum of Bonus for each Department ---")
 print("="*50 + "\n");
 
 print(df.groupby('Department')['Bonus'].sum())
+
+print("\n" + "="*50);
+print("--- Average Salary for each Department, but split separately for Juniors and Seniors ---")
+print("="*50 + "\n");
+
+print(df.pivot_table(index='Department', columns='Seniority', values='Salary', aggfunc='mean'))
