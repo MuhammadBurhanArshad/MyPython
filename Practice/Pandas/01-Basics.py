@@ -73,8 +73,12 @@ print("--- Label Based Filtering as DataFrame ---")
 print(df[df['Name'] == "Leo"]) 
 print("\n" + "="*50 + "\n")
 
-
 print("--- Index Based Data Filtering ---")
 
-print(df.iloc[2]) 
+print(df.iloc[2])  # iloc is for indexing column when we don't not about the column or row name
+print("\n" + "="*50 + "\n")
+
+print("--- Salary > 75000 Filtering ---")
+
+print(df[df['Salary'] > 75000])
 print("\n" + "="*50 + "\n")
