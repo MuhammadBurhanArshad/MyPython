@@ -33,3 +33,19 @@ print("--- Filling Null Bonus Values ---")
 print("="*50 + "\n");
 
 print(df.fillna(0)) # fillna() is pandas' primary method for replacing missing values (NaN, None, or NaT) with a specified value or strategy.
+
+print("\n" + "="*50);
+print("--- Fill the missing 'Bonus' values with the average of the existing Bonus column ---")
+print("="*50 + "\n");
+
+print(df['Bonus'].fillna(df['Bonus'].mean()))
+# df['Bonus'] = df['Bonus'].fillna(df['Bonus'].mean())
+# print(df)
+
+print("\n" + "="*50);
+print("--- Changing data type to Datetime from string ---")
+print("="*50 + "\n");
+
+print(pd.to_datetime(df['Hire_Date']))
+# df['Hire_Date'] = pd.to_datetime(df['Hire_Date'])
+# print(df.info())
