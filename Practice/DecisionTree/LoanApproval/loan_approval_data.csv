@@ -1,0 +1,21 @@
+Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,LoanAmount,Credit_History,Loan_Status
+Male,Yes,0,Graduate,No,5000,150,1,Y
+Female,No,1,Not Graduate,Yes,3000,100,0,N
+Male,Yes,0,Graduate,No,4000,120,1,Y
+Male,No,2,Graduate,No,6000,200,1,Y
+Female,Yes,1,Not Graduate,Yes,2500,80,0,N
+Male,Yes,3,Graduate,Yes,7000,250,1,Y
+Female,No,0,Graduate,No,3200,90,1,N
+Male,Yes,2,Not Graduate,Yes,5800,150,1,Y
+Male,Yes,1,Graduate,No,6200,180,1,Y
+Female,No,0,Graduate,No,2800,100,0,N
+Male,Yes,0,Graduate,Yes,5400,130,1,Y
+Female,Yes,3,Not Graduate,No,3000,120,0,N
+Male,No,2,Graduate,No,4500,140,1,Y
+Female,No,1,Graduate,Yes,2700,110,0,N
+Male,Yes,0,Not Graduate,No,5100,170,1,Y
+Male,Yes,2,Graduate,Yes,6400,200,1,Y
+Female,No,1,Graduate,No,3300,100,0,N
+Male,Yes,0,Graduate,No,5900,160,1,Y
+Female,Yes,0,Not Graduate,Yes,2600,90,0,N
+Male,No,1,Graduate,No,6100,190,1,Y
