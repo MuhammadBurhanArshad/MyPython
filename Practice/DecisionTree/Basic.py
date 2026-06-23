@@ -25,7 +25,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(inputs, target, test_size=0.
 model = tree.DecisionTreeClassifier()
 model.fit(X_train, Y_train)
 
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 
 predictions = model.predict(X_test)
 
